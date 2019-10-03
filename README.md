@@ -45,4 +45,4 @@ Please make sure you have this installed on your machine:
 
 ## 🙋 Need help?
 
-Message us at [Messenger](m.me/freeCodeCamp.Manila), if you haven't joined, join our [Facebook group](https://web.facebook.com/groups/free.code.camp.manila/).
+Message us at [Messenger](https://m.me/freeCodeCamp.Manila), if you haven't joined, join our [Facebook group](https://web.facebook.com/groups/free.code.camp.manila/).
