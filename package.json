@@ -1,0 +1,12 @@
+{
+  "name": "fccmanila.github.io",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "devDependencies": {
+    "parcel": "^1.12.3"
+  }
+}
