@@ -66,5 +66,10 @@
 }
 
 .card-text-container {
-	padding: 5px 20px;
+	padding: 10px 25px 15px 25px;
+}
+
+.map-icon {
+	position: relative;
+	top: 2px;
 }
