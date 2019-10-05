@@ -105,6 +105,7 @@
 }
 
 .button-primary:hover {
+  background: #004200;
   transform: translateY(-8px);
   box-shadow: 0 4px 8px rgba(200, 254, 200, 0.2);
 }
