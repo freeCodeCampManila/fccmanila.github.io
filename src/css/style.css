@@ -14,7 +14,7 @@ a {
 }
 
 /* Header Layout */
-header {
+.header {
   position: fixed;
   top: 0;
   right: 0;
@@ -25,39 +25,40 @@ header {
   box-shadow: 0px 1px 5px 0px rgba(46,62,72,0.25);
 }
 
-header a {
+.header .fcc-logo,
+.header .header-nav_link {
   display: inline-block;
   font-weight: 700;
 }
 
-header a.fcc-logo {
+.header .fcc-logo {
   color: #006400;
   margin-top: 20px;
 }
 
-header img {
+.header .fcc-logo_img {
   width: 40px;
   border-radius: 50%;
   margin-right: 5px;
   margin-bottom: 3px;
 }
 
-header nav {
+.header .header-nav {
   float: right;
   margin-top: 20px;
 }
 
-header nav a {
+.header .header-nav_link {
   font-size: 14px;
   color: #2E3E48;
   margin-left: 40px;
 }
 
-header nav a:first-child {
+.header .header-nav_link:first-child {
   margin-left: 0;
 }
 
-header nav a.fcc-community_btn {
+.header .header-nav .fcc-community_btn {
   background: #006400;
   padding: 12px 20px;
   border-radius: 5px;
