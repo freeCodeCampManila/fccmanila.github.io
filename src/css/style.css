@@ -15,7 +15,14 @@
   padding: 75px;
 }
 
-.gallery-title {
+.involve {
+  background: #ffffff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.gallery-title,
+.involve-title {
   margin-bottom: 45px;
   color: #006400;
   text-align: center;
@@ -72,6 +79,32 @@
 .map-icon {
   position: relative;
   top: 2px;
+}
+
+.message {
+  width: 600px;
+  margin: 50px auto;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #2e3e48;
+}
+
+.button-primary {
+  background: #006400;
+  border-radius: 5px;
+  padding: 12px 16px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 300ms ease all;
+  display: inline-block;
+}
+
+.button-primary:hover {
+  background: #004200;
 }
 
 .community {
