@@ -1,0 +1,154 @@
+body {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  background: url("images/Rectangle 3.svg") no-repeat;
+  background-size: cover;
+  background-position-y: -50px;
+}
+
+.container {
+  position: relative;
+  top: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, auto));
+  grid-column-gap: 50px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+#hero-image {
+  grid-row: 1 / 6;
+  grid-column: 2 / -1;
+  background-size: cover;
+  width: 100%;
+  box-shadow: 0px 4px 16px rgba(46, 62, 72, 0.08),
+    0px 8px 24px rgba(46, 62, 72, 0.16);
+  border-radius: 10px;
+  max-width: 750px;
+  justify-self: start;
+}
+
+.button {
+  background-color: #fff;
+  grid-column: 1 / 2;
+  color: #006400;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  padding: 15px 32px;
+  margin: 4px 2px;
+  cursor: pointer;
+  place-self: start;
+  border-radius: 5px;
+  grid-row: 3 / 4;
+  margin-left: 70px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+.button:hover {
+  background-color: #4caf50;
+  color: white;
+}
+p {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  padding-left: 70px;
+}
+
+.fab {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+  margin-top: 20px;
+  color: #fff;
+  padding-left: 70px;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  align-self: end;
+  font-size: 48px;
+  padding-left: 70px;
+}
+
+span {
+  font-family: "Roboto", sans-serif;
+  color: #c8fec8;
+  padding: 10px;
+  margin-top: 18px;
+  font-size: 15px;
+}
+
+.socilamediaMileston {
+  padding-top: 40px;
+  display: flex;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1371px) {
+  h1 {
+    font-size: 40px;
+    padding-left: 0;
+  }
+
+  p {
+    font-size: 20px;
+    padding-left: 0;
+  }
+
+  .button {
+    padding: 11px 10px;
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  #hero-image {
+    width: 95%;
+    justify-self: end;
+  }
+
+  .fab {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 1018px) {
+  .container {
+    grid-template-columns: none;
+  }
+
+  h1 {
+    font-size: 40px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  p {
+    font-size: 20px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .button {
+    padding: 16px 19px;
+    margin-left: 0;
+    grid-row: 3 / 3;
+    justify-self: center;
+  }
+
+  #hero-image {
+    width: 100%;
+    justify-self: center;
+    grid-row: 5 / 5;
+  }
+
+  .socilamediaMileston {
+    justify-self: center;
+    margin-bottom: 80px;
+  }
+}
