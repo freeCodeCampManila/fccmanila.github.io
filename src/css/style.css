@@ -156,7 +156,6 @@
 	font-size: 14px;
 	margin-top: 8px;
 	padding-top: 8px;
-	;
 }
 
 .footer-link {
@@ -167,10 +166,4 @@
 .fcc-footer-logo {
 	width: 40px;
 	vertical-align: middle;
-}
-
-.row:after {
-	content: "";
-	display: table;
-	clear: both;
 }
