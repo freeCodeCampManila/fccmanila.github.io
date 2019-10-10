@@ -75,7 +75,7 @@
 	top: 2px;
 }
 
-footer {
+.footer {
 	height: auto;
 	background-color: #006400;
 	width: 100%;
@@ -84,7 +84,7 @@ footer {
 	justify-content: space-around;
 }
 
-small {
+.copyright {
 	color: #fff;
 	text-align: center;
 }
