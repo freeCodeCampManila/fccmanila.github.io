@@ -238,9 +238,3 @@
   width: 40px;
   vertical-align: middle;
 }
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
