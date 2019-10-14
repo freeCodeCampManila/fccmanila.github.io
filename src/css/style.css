@@ -253,33 +253,75 @@
   margin: 0 auto;
 }
 
-.navbar .navbar-left,
-.navbar .navbar-right {
+.navbar-left,
+.navbar-right {
   min-width: 10rem;
   min-height: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
 }
 
 .navbar .navbar-brand {
   display: flex;
   align-items: center;
-  padding: 0.5rem 1rem;
 }
 
 .navbar-brand .brand-image {
   border-radius: 50%;
-  margin: 0 0.5rem;
 }
 
 .navbar-brand .brand-image img {
   max-width: 2.5rem;
 }
 
+.navbar-brand .brand-image,
 .navbar-brand .brand-text {
-  margin: 0 0.5rem;
+  margin: 0 0.25rem;
+}
+
+.navbar-brand .brand-text {
   font-weight: 700;
   color: #006400;
 }
 
 .navbar-right {
   flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.navbar-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.5rem;
+  min-width: 4rem;
+  padding: 0.75rem 0.9rem;
+}
+
+a.navbar-item {
+  text-decoration: none;
+}
+
+a.navbar-item:hover {
+  text-decoration: underline;
+}
+
+.navbar-item.community-btn {
+  /* community-btn style rules will make padding at navbar so wide, so disable it*/
+
+  padding: 0;
+}
+
+.navbar-item:first-child {
+  margin-right: 1.125rem;
+}
+
+.navbar-item + .navbar-item {
+  margin: 0 1.125rem;
 }
