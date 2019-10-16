@@ -84,7 +84,7 @@
 	justify-content: space-around;
 	color: #ffffff;
 	font-weight: 100;
-	grid-auto-flow: column;
+	padding-bottom: 30px;
 }
 
 .copyright {
@@ -108,12 +108,13 @@
 	margin-left: auto;
 	padding-top: 15px;
 	margin-top: 15px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	display: grid;
 }
 
 .column {
-	width: 25%;
-	padding: 10px;
-	height: 300px;
+	padding: 1rem;
+	height: auto;
 }
 
 .column-2,
