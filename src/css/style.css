@@ -84,11 +84,7 @@
 	justify-content: space-around;
 	color: #ffffff;
 	font-weight: 100;
-<<<<<<< HEAD
-	padding-bottom: 30px;
-=======
-	grid-auto-flow:column;
->>>>>>> additional css classes over tag
+	grid-auto-flow: column;
 }
 
 .copyright {
@@ -112,22 +108,12 @@
 	margin-left: auto;
 	padding-top: 15px;
 	margin-top: 15px;
-<<<<<<< HEAD
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	display: grid;
-}
-
-.column {
-	padding: 1rem;
-	height: auto;
-=======
 }
 
 .column {
 	width: 25%;
 	padding: 10px;
 	height: 300px;
->>>>>>> additional css classes over tag
 }
 
 .column-2,
@@ -154,10 +140,12 @@
 		width: 1170px;
 	}
 }
+
 .footer-header {
 	color: #ffffff;
 	font-weight: 100;
 }
+
 .small-footer-header {
 	font-size: 12px;
 	color: #fff;
@@ -180,12 +168,9 @@
 	width: 40px;
 	vertical-align: middle;
 }
-<<<<<<< HEAD
-=======
 
 .row:after {
 	content: "";
 	display: table;
 	clear: both;
 }
->>>>>>> additional css classes over tag
