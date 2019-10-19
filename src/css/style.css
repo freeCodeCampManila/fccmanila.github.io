@@ -274,7 +274,7 @@
   border-radius: 50%;
 }
 
-.navbar-brand .brand-image img {
+.navbar-brand img.brand-image {
   max-width: 2.5rem;
 }
 
