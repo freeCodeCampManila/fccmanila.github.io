@@ -146,6 +146,10 @@
   text-align: center;
 }
 
+.community-btn a:hover {
+  background: #004200;
+}
+
 .footer {
   height: auto;
   background-color: #006400;
