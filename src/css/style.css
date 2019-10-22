@@ -51,6 +51,15 @@
   margin: 25px;
 }
 
+.card:hover {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  box-shadow: 0 28px 18px 0 rgba(0, 0, 0, 0.2);
+
+  -webkit-transition: 150ms ease-in-out;
+  transition: 150ms ease-in-out;
+}
+
 .card-photo {
   border-radius: 5px 5px 0 0;
   width: 100%;
