@@ -295,6 +295,17 @@
   justify-content: right;
 }
 
+@media (max-width: 767px) {
+  /* make right navbar items disappear except for the Community Button */
+  .navbar-right .navbar-item {
+    display: none;
+  }
+
+  .navbar-right .navbar-item.community-btn {
+    display: flex;
+  }
+}
+
 .navbar-item {
   display: flex;
   align-items: center;
