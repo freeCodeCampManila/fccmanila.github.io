@@ -51,14 +51,20 @@
   margin: 25px;
 }
 
-.card-photo {
+.card a {
+  text-decoration: none;
+}
+
+.card-photo,
+.modal-photo {
   border-radius: 5px 5px 0 0;
   width: 100%;
   height: 250px;
   object-fit: cover;
 }
 
-.card-title {
+.card-title,
+.modal-title {
   font-size: 1em;
   font-weight: bold;
   padding: 5px 0 5px 0;
@@ -68,12 +74,70 @@
   padding: 5px 0 5px 0;
 }
 
-.card-secondary-text {
+.card-secondary-text,
+.modal-text {
   font-size: 0.8em;
 }
 
 .card-text-container {
   padding: 10px 25px 15px 25px;
+}
+
+/* Dark background of modal */
+.card-modal:before {
+  content: "";
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Style of modal */
+.modal-container {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 800px;
+  background-color: #fff;
+  z-index: 1;
+
+  /* push the modal 200% below to hide it first */
+  -webkit-transform: translate(-50%, 200%);
+  -ms-transform: translate(-50%, 200%);
+  transform: translate(-50%, 200%);
+
+  /* make the transition a little slower by 500ms */
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+}
+
+/* Show modal dark background when click */
+.card-modal:target::before {
+  display: block;
+}
+
+/* Show modal when click by setting translate(-50%, 200%) to (-50%, -50%)  */
+.card-modal:target .modal-container {
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.modal-photo {
+  height: 400px;
+}
+
+.modal-content {
+  padding: 5px 20px 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
 .map-icon {
