@@ -400,3 +400,7 @@ a.navbar-item:hover {
 .navbar-item + .navbar-item {
   margin: 0 1.125rem;
 }
+
+a.footer-link:hover {
+  text-decoration: underline;
+}
