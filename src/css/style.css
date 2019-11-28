@@ -137,6 +137,10 @@ background-color: #2c632c;
   letter-spacing: 0.1rem; /*1px*/
 }
 
+strong {
+  color:#fff;
+}
+
 a{
  font-size: 1.1rem; /*11px*/
  letter-spacing: .1rem; /*1px*/
