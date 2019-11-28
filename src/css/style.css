@@ -44,10 +44,17 @@ background-color: #2c632c;
   top:14rem;
 }
 
-.header__img-box{
+.header__img{
   width: 57rem;
   height: 33rem;
   border-radius: .8rem;
+}
+
+.header__heading-container{
+  position: relative;
+  width: 40rem;
+  top:37%;
+  background-color: #2c632c;
 }
 
 /* SECTION COMMUNITY*/
