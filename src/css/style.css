@@ -58,12 +58,13 @@ background-color: #2c632c;
 }
 
 .heading-primary {
-  color:#fff;
   backface-visibility: hidden;
 }
 
 .heading-primary--main {
   display: block;
+  color:#fff;
+
   font-size: 3rem;
   font-weight: 700;
   animation-name: moveInLeft;
@@ -73,11 +74,26 @@ background-color: #2c632c;
 
 .heading-primary--sub{
   display:block;
+  color:#fff;
   font-size: 1.4rem;
   letter-spacing: .2rem;
   font-weight: 370;
   margin-bottom: 3.0rem;
   animation: moveInRight 1s ease-out;
+}
+
+@keyframes moveInleft{
+  0%{
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80%{
+    transform: translateX(1rem);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
 /* SECTION COMMUNITY*/
