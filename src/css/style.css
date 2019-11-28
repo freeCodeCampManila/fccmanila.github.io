@@ -96,6 +96,37 @@ background-color: #2c632c;
   }
 }
 
+@keyframes moveInRight{
+  0%{
+    opacity:0;
+    transform: translateX(10rem); /*100px*/
+  }
+
+  80%{
+    transform: translateX(-1rem); /*-10px*/
+
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInBottom{
+  0%{
+    opacity:0;
+    transform: translateY(4rem); /*40px*/
+  }
+
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+
 /* SECTION COMMUNITY*/
 
 .text-supporting {
