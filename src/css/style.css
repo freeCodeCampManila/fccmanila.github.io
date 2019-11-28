@@ -1,10 +1,50 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
   color: #2e3e48;
 }
+
+html {
+  font-size: 62.5%; /*1 rem is equals to 10px divide by 16px the default browser size*/
+
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  box-sizing: border-box;
+}
+
+/*HEADER SECTION*/
+.header {
+background-color:#2c632c;
+height: 70vh;
+position: relative;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: flex-start;
+
+}
+
+#item{
+padding: 0;
+margin: 3rem;
+background-color: #2c632c;
+
+}
+
+#item2{
+  height: 40rem;
+}
+
+.header__img-box {
+  position: relative;
+  top:14rem;
+}
+
+/* SECTION COMMUNITY*/
 
 .text-supporting {
   color: #828282;
@@ -20,6 +60,8 @@
   padding: 100px 0;
   text-align: center;
 }
+
+/*SECTION GALLERY*/
 
 .gallery-title,
 .involve-title {
