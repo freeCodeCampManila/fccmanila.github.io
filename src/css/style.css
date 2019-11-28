@@ -9,6 +9,33 @@ html {
 
 }
 
+@media (max-width: 75em) { 
+  html {
+   font-size: 56.25%; /*1 rem =9px  //width < 900*/
+  }
+ }
+ 
+ @media (max-width: 56.25em) {
+   html {
+    font-size: 50%; /*1 rem = 8px, 8/16 = 50%  //width < 600*/
+   }
+ }
+ 
+ @media (max-width: 37.5em) { 
+   html {
+    font-size: 30%; /*phone*/
+   }
+ }
+ 
+ @media (min-width: 112.5em) {
+  html {
+    font-size:75%; /*1 rem = 12px, 12/16 */
+  }
+ }
+ 
+ 
+ 
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -28,6 +55,15 @@ align-items: flex-start;
 
 }
 
+@media (max-width: 75em) { 
+  .header {
+    height: 95vh;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+   
+  }
+ }
+
+
 #item{
 padding: 0;
 margin: 3rem;
@@ -44,11 +80,25 @@ background-color: #2c632c;
   top:14rem;
 }
 
+@media (max-width: 75em) { 
+  .header__img-box {
+    top:12rem;
+   
+  }
+ }
+
+
 .header__img{
   width: 57rem;
   height: 33rem;
   border-radius: .8rem;
 }
+
+@media (max-width: 75em) { 
+  .header__img{
+    height: 30rem;
+  }
+ }
 
 .header__heading-container{
   position: relative;
