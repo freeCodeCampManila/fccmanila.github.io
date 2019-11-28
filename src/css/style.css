@@ -203,6 +203,33 @@ a{
   animation-fill-mode: backwards;
 }
 
+/*SVG section wave part*/
+.wave{
+  height: 15rem; /*150px*/ 
+  overflow: hidden; 
+}
+
+
+@media (max-width: 75em) { 
+  .wave {
+   height: 0; /*1 rem =9px  //width < 900*/
+   
+  }
+ }
+ 
+ @media (max-width: 56.25em) {
+   html {
+    font-size: 50%; /*1 rem = 8px, 8/16 = 50%  //width < 600*/
+   }
+ }
+ 
+ @media (max-width: 37.5em) { 
+   html {
+    font-size: 30%; /*phone*/
+   }
+ }
+
+
 
 /* SECTION COMMUNITY*/
 
