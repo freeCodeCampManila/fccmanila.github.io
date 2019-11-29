@@ -267,15 +267,15 @@ a{
   }
  }
  
- @media (max-width: 56.25em) {
-   html {
-    font-size: 50%; /*1 rem = 8px, 8/16 = 50%  //width < 600*/
+ @media (max-width: 56.25em) { /*tablet landscape*/
+   .wave { 
+    
    }
  }
  
  @media (max-width: 37.5em) { 
-   html {
-    font-size: 30%; /*phone*/
+   .wave {
+
    }
  }
 
