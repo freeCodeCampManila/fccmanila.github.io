@@ -82,7 +82,6 @@ background-color: #2c632c;
 @media (max-width: 75em) { 
   .header__img-box {
     top:12rem;
-   
   }
  }
 
@@ -96,18 +95,21 @@ background-color: #2c632c;
 @media (max-width: 75em) { 
   .header__img{
     height: 30rem;
+    width: 50rem;
   }
  }
 
  @media (max-width: 56.25em) {
   .header__img {
    height: 25rem; /*1 rem = 8px, 8/16 = 50%  //width < 600*/
+   width: 45rem;
   }
 }
 
 @media (max-width: 37.5em) { 
   .header__img {
    height: 20rem; /*phone*/
+   width: 40rem;
   }
 }
 
@@ -119,6 +121,12 @@ background-color: #2c632c;
   top:37%;
   background-color: #2c632c;
 }
+
+@media (max-width: 75em) { 
+  .header__heading-container {
+    top:18%;
+  }
+ }
 
 .heading-primary {
   backface-visibility: hidden;
