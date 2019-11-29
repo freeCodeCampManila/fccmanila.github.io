@@ -59,8 +59,7 @@ align-items: flex-start;
   .header {
     height: 95vh;
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-   
-  }
+   }
  }
 
 
@@ -99,6 +98,20 @@ background-color: #2c632c;
     height: 30rem;
   }
  }
+
+ @media (max-width: 56.25em) {
+  .header__img {
+   height: 25rem; /*1 rem = 8px, 8/16 = 50%  //width < 600*/
+  }
+}
+
+@media (max-width: 37.5em) { 
+  .header__img {
+   height: 20rem; /*phone*/
+  }
+}
+
+ 
 
 .header__heading-container{
   position: relative;
