@@ -269,9 +269,10 @@ a{
  
  @media (max-width: 56.25em) { /*tablet landscape*/
    .wave { 
-    
+      width: 100%;
    }
  }
+
  
  @media (max-width: 37.5em) { 
    .wave {
