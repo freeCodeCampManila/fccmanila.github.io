@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta property="og:title" content="freeCodeCamp Manila">
+    <meta property="og:description" content="The official page of the freeCodeCamp Manila Group">
+    <meta property="og:image" content="https://fccmanila.github.io/images/freeCodeCamp-logo.png">
+    <meta property="og:url" content="https://fccmanila.github.io">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -9,10 +13,41 @@
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="images/freeCodeCamp-logo.png" type="image/png" sizes="16x16">
     <title>freeCodeCamp Manila</title>
   </head>
 
   <body>
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-left">
+            <div class="navbar-brand">
+              <img
+                class="brand-image"
+                src="images/freeCodeCamp-logo.png"
+                alt="freeCodeCamp"
+              />
+
+              <p class="brand-text">freeCodeCamp Manila</p>
+            </div>
+          </div>
+          <div class="navbar-right">
+            <a href="#" class="navbar-item">Blog</a>
+            <a href="#" class="navbar-item">Leaderboard</a>
+            <div class="navbar-item community-btn">
+              <a
+                href="https://facebook.com/groups/free.code.camp.manila/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Join the community</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
     <section class="community">
       <h2 class="community-title">Join the Community</h2>
       <p class="community-text">
@@ -34,62 +69,161 @@
     <section class="gallery">
       <h2 class="gallery-title">Our Meetups Gallery</h2>
 
+      <!-- ----- Gallery Modal ----- -->
+      <div class="gallery-modal">
+        <!-- Meetup August -->
+        <div class="card-modal" id="meetup-august">
+          <div class="modal-container">
+            <img
+              class="modal-photo"
+              src="images/meetup-august.jpg"
+              alt="meetup-august"
+            />
+            <div class="modal-content">
+              <div>
+                <p class="modal-title">August RoundTable Meetup</p>
+                <p class="modal-text">
+                  <img class="map-icon" src="images/map-pin.svg" /> Bo's Coffee,
+                  Ayala
+                </p>
+              </div>
+              <a href="#modal-close">Close</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Meetup July -->
+        <div class="card-modal" id="meetup-july">
+          <div class="modal-container">
+            <img
+              class="modal-photo"
+              src="images/meetup-july.jpg"
+              alt="meetup-july"
+            />
+            <div class="modal-content">
+              <div>
+                <p class="modal-title">July RoundTable Meetup</p>
+                <p class="modal-text">
+                  <img class="map-icon" src="images/map-pin.svg" /> Coffee
+                  Project, Mandaluyong
+                </p>
+              </div>
+              <a href="#modal-close">Close</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Meetup June -->
+        <div class="card-modal" id="meetup-june">
+          <div class="modal-container">
+            <img
+              class="modal-photo"
+              src="images/meetup-june.jpg"
+              alt="meetup-june"
+            />
+            <div class="modal-content">
+              <div>
+                <p class="modal-title">June RoundTable Meetup</p>
+                <p class="modal-text">
+                  <img class="map-icon" src="images/map-pin.svg" /> Coffee
+                  Project, Mandaluyong
+                </p>
+              </div>
+              <a href="#modal-close">Close</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Meetup February -->
+        <div class="card-modal" id="meetup-february">
+          <div class="modal-container">
+            <img
+              class="modal-photo"
+              src="images/meetup-february.jpg"
+              alt="meetup-february"
+            />
+            <div class="modal-content">
+              <div>
+                <p class="modal-title">February Coffee + Code Meetup</p>
+                <p class="modal-text">
+                  <img class="map-icon" src="images/map-pin.svg" /> Bo's Coffee
+                  Primo, Mandaluyong
+                </p>
+              </div>
+              <a href="#modal-close">Close</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ------------------ -->
+
       <div class="gallery-grid-container">
         <div class="card gallery-grid-leftCol">
-          <img
-            class="card-photo"
-            src="images/meetup-august.jpg"
-            alt="meetup-august"
-          />
-          <div class="card-text-container">
-            <p class="card-title">August RoundTable Meetup</p>
-            <p class="card-text card-secondary-text text-supporting">
-              <img class="map-icon" src="images/map-pin.svg" /> Bo's Coffee,
-              Ayala
-            </p>
-          </div>
+          <a href="#meetup-august">
+            <img
+              class="card-photo"
+              src="images/meetup-august.jpg"
+              alt="meetup-august"
+            />
+            <div class="card-text-container">
+              <p class="card-title">August RoundTable Meetup</p>
+              <p class="card-text card-secondary-text text-supporting">
+                <img class="map-icon" src="images/map-pin.svg" /> Bo's Coffee,
+                Ayala
+              </p>
+            </div>
+          </a>
         </div>
+
         <div class="card gallery-grid-rightCol">
-          <img
-            class="card-photo"
-            src="images/meetup-july.jpg"
-            alt="meetup-july"
-          />
-          <div class="card-text-container">
-            <p class="card-title">July RoundTable Meetup</p>
-            <p class="card-text card-secondary-text text-supporting">
-              <img class="map-icon" src="images/map-pin.svg" /> Coffee Project,
-              Mandaluyong
-            </p>
-          </div>
+          <a href="#meetup-july">
+            <img
+              class="card-photo"
+              src="images/meetup-july.jpg"
+              alt="meetup-july"
+            />
+            <div class="card-text-container">
+              <p class="card-title">July RoundTable Meetup</p>
+              <p class="card-text card-secondary-text text-supporting">
+                <img class="map-icon" src="images/map-pin.svg" /> Coffee
+                Project, Mandaluyong
+              </p>
+            </div>
+          </a>
         </div>
+
         <div class="card gallery-grid-leftCol">
-          <img
-            class="card-photo"
-            src="images/meetup-june.jpg"
-            alt="meetup-june"
-          />
-          <div class="card-text-container">
-            <p class="card-title">June RoundTable Meetup</p>
-            <p class="card-text card-secondary-text text-supporting">
-              <img class="map-icon" src="images/map-pin.svg" /> Coffee Project,
-              Mandaluyong
-            </p>
-          </div>
+          <a href="#meetup-june">
+            <img
+              class="card-photo"
+              src="images/meetup-june.jpg"
+              alt="meetup-june"
+            />
+            <div class="card-text-container">
+              <p class="card-title">June RoundTable Meetup</p>
+              <p class="card-text card-secondary-text text-supporting">
+                <img class="map-icon" src="images/map-pin.svg" /> Coffee
+                Project, Mandaluyong
+              </p>
+            </div>
+          </a>
         </div>
+
         <div class="card gallery-grid-rightCol">
-          <img
-            class="card-photo"
-            src="images/meetup-february.jpg"
-            alt="meetup-february"
-          />
-          <div class="card-text-container">
-            <p class="card-title">February Coffee + Code Meetup</p>
-            <p class="card-text card-secondary-text text-supporting">
-              <img class="map-icon" src="images/map-pin.svg" /> Bo's Coffee
-              Primo, Mandaluyong
-            </p>
-          </div>
+          <a href="#meetup-february">
+            <img
+              class="card-photo"
+              src="images/meetup-february.jpg"
+              alt="meetup-february"
+            />
+            <div class="card-text-container">
+              <p class="card-title">February Coffee + Code Meetup</p>
+              <p class="card-text card-secondary-text text-supporting">
+                <img class="map-icon" src="images/map-pin.svg" /> Bo's Coffee
+                Primo, Mandaluyong
+              </p>
+            </div>
+          </a>
         </div>
       </div>
     </section>
@@ -112,5 +246,101 @@
         Message us on Messenger
       </a>
     </section>
+
+    <footer class="footer">
+      <div class="row footer-container">
+        <div class="column">
+          <h3 class="footer-header">
+            <img
+              class="fcc-footer-logo"
+              src="images/freeCodeCamp-logo.png"
+              alt="freeCodeCamp Manila"
+            />freeCodeCamp Manila
+          </h3>
+          <p class="footer-support-text">
+            We are not affiliated with freeCodeCamp.org and are an independent
+            local community and study group.
+          </p>
+          <p class="footer-support-text-owned">
+            freeCodeCamp Logo is owned by freeCodeCamp.org
+          </p>
+          <small class="copyright">
+            &copy 2019 freeCodeCamp Manila
+          </small>
+        </div>
+        <div class="column column-2">
+          <h2 class="small-footer-header">freeCodeCamp</h2>
+          <p class="footer-support-text">
+            <a
+              class="footer-link"
+              href="https://learn.freecodecamp.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Curriculum</a
+            >
+          </p>
+          <p class="footer-support-text">
+            <a
+              class="footer-link"
+              href="https://www.freecodecamp.org/news"
+              target="_blank"
+              rel="noopener noreferrer"
+              >News</a
+            >
+          </p>
+          <p class="footer-support-text">
+            <a
+              class="footer-link"
+              href="https://www.freecodecamp.org/forum/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Forum</a
+            >
+          </p>
+        </div>
+        <div class="column column-3">
+          <h2 class="small-footer-header">Connect with us</h2>
+          <p class="footer-support-text">
+            <a
+              class="footer-link"
+              href="https://www.facebook.com/freeCodeCamp.Manila/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Facebook Page</a
+            >
+          </p>
+          <p class="footer-support-text">
+            <a
+              class="footer-link"
+              href="https://www.facebook.com/groups/free.code.camp.manila/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Facebook Group</a
+            >
+          </p>
+          <p class="footer-support-text">
+            <a
+              class="footer-link"
+              href="https://github.com/fccManila"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </p>
+        </div>
+        <div class="column column-4">
+          <h2 class="small-footer-header">Other freeCodeCamp Communities</h2>
+          <p class="footer-support-text">
+            <a
+              class="footer-link"
+              href="https://www.facebook.com/groups/584419352008720/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >freeCodeCamp Tarlac</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

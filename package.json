@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build src/index.html",
+    "build": "parcel build src/index.html --public-url='./'",
     "deploy": "yarn build && gh-pages -d dist --branch master"
   },
   "devDependencies": {
