@@ -33,8 +33,6 @@ html {
   }
  }
  
- 
- 
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -43,7 +41,7 @@ body {
 }
 
 /*HEADER SECTION*/
-.header {
+.hero {
 background-color:#2c632c;
 height: 70vh;
 position: relative;
@@ -55,7 +53,7 @@ align-items: flex-start;
 }
 
 @media (max-width: 75em) { 
-  .header {
+  .hero {
     height: 95vh;
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
    }
@@ -73,40 +71,40 @@ background-color: #2c632c;
   height: 40rem;
 }
 
-.header__img-box {
+.hero__img-box {
   position: relative;
   top:14rem;
 }
 
 @media (max-width: 75em) { 
-  .header__img-box {
+  .hero__img-box {
     top:12rem;
   }
  }
 
 
-.header__img{
+.hero__img{
   width: 57rem;
   height: 33rem;
   border-radius: .8rem;
 }
 
 @media (max-width: 75em) { 
-  .header__img{
+  .hero__img{
     height: 30rem;
     width: 50rem;
   }
  }
 
  @media (max-width: 56.25em) {
-  .header__img {
+  .hero__img {
    height: 25rem; /*1 rem = 8px, 8/16 = 50%  //width < 600*/
    width: 45rem;
   }
 }
 
 @media (max-width: 37.5em) { 
-  .header__img {
+  .hero__img {
    height: 20rem; /*phone*/
    width: 40rem;
   }
@@ -114,7 +112,7 @@ background-color: #2c632c;
 
  
 
-.header__heading-container{
+.hero__heading-container{
   position: relative;
   width: 40rem;
   top:37%;
@@ -122,7 +120,7 @@ background-color: #2c632c;
 }
 
 @media (max-width: 75em) { 
-  .header__heading-container {
+  .hero__heading-container {
     top:18%;
   }
  }
@@ -220,7 +218,7 @@ background-color: #2c632c;
   }
 }
 
-.header__icon{
+.hero__icon{
   margin-top:5rem; /*50px*/
   color: white;
   font-size: 1.1rem; /*11px*/ 
