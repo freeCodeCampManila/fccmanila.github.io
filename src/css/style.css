@@ -49,6 +49,12 @@
   background: white;
   width: 435px;
   margin: 25px;
+  transition: 250ms ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 18px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card a {
