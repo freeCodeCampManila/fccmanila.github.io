@@ -53,9 +53,8 @@
 }
 
 .card:hover {
-  margin-top: 0px;
-  margin-bottom: 50px;
-  box-shadow: 0 28px 18px 0 rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
+  box-shadow: 0 20px 18px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card a {
