@@ -404,3 +404,15 @@ a.navbar-item:hover {
 a.footer-link:hover {
   text-decoration: underline;
 }
+
+/*create hero section*/
+.hero{
+  background-color:#2c632c;
+height: 70vh;
+position: relative;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: flex-start;
+}
+
