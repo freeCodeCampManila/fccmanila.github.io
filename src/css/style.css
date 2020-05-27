@@ -425,12 +425,12 @@ align-items: flex-start;
   }
 
   #item2{
-    height: 40rem;
+    height: 11px;
   }
   
   .hero__img-box {
     position: relative;
-    top:14rem;
+    top:2rem;
   }
   
   @media (max-width: 75em) { 
@@ -441,8 +441,8 @@ align-items: flex-start;
   
   
   .hero__img{
-    width: 57rem;
-    height: 33rem;
+    width: 37rem;
+    height: 27rem;
     border-radius: .8rem;
   }
   
@@ -489,8 +489,7 @@ align-items: flex-start;
   .heading-primary--main {
     display: block;
     color:#fff;
-  
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
     animation-name: moveInLeft;
     animation-duration:1s;
@@ -520,7 +519,7 @@ align-items: flex-start;
   .heading-primary--sub{
     display:block;
     color:#fff;
-    font-size: 1.4rem;
+    font-size: 1rem;
     letter-spacing: .2rem;
     font-weight: 370;
     margin-bottom: 3.0rem;
@@ -576,9 +575,9 @@ align-items: flex-start;
   }
   
   .hero__icon{
-    margin-top:5rem; /*50px*/
+    margin-top:3rem; /*50px*/
     color: white;
-    font-size: 1.1rem; /*11px*/ 
+    font-size: 11px; /*11px*/ 
     letter-spacing: 0.1rem; /*1px*/
   }
   
@@ -586,8 +585,8 @@ align-items: flex-start;
     color:#fff;
   }
   
-  a{
-   font-size: 1.1rem; /*11px*/
+  btn{
+   font-size: 11px;
    letter-spacing: .1rem; /*1px*/
    
   }
