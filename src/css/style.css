@@ -406,7 +406,7 @@ a.footer-link:hover {
 }
 
 /*create hero section*/
-.hero{
+.create-hero{
   background-color:#2c632c;
 height: 70vh;
 position: relative;
@@ -415,4 +415,251 @@ flex-direction: row;
 justify-content: space-around;
 align-items: flex-start;
 }
+
+
+#item{
+  padding: 0;
+  margin: 3rem;
+  background-color: #2c632c;
+  
+  }
+
+  #item2{
+    height: 40rem;
+  }
+  
+  .hero__img-box {
+    position: relative;
+    top:14rem;
+  }
+  
+  @media (max-width: 75em) { 
+    .hero__img-box {
+      top:12rem;
+    }
+   }
+  
+  
+  .hero__img{
+    width: 57rem;
+    height: 33rem;
+    border-radius: .8rem;
+  }
+  
+  @media (max-width: 75em) { 
+    .hero__img{
+      height: 30rem;
+      width: 50rem;
+    }
+   }
+  
+   @media (max-width: 56.25em) {
+    .hero__img {
+     height: 25rem; /*1 rem = 8px, 8/16 = 50%  //width < 600*/
+     width: 45rem;
+    }
+  }
+  
+  @media (max-width: 37.5em) { 
+    .hero__img {
+     height: 20rem; /*phone*/
+     width: 40rem;
+    }
+  }
+  
+   
+  
+  .hero__heading-container{
+    position: relative;
+    width: 40rem;
+    top:37%;
+    background-color: #2c632c;
+  }
+  
+  @media (max-width: 75em) { 
+    .hero__heading-container {
+      top:18%;
+    }
+   }
+  
+  .heading-primary {
+    backface-visibility: hidden;
+  }
+  
+  .heading-primary--main {
+    display: block;
+    color:#fff;
+  
+    font-size: 3rem;
+    font-weight: 700;
+    animation-name: moveInLeft;
+    animation-duration:1s;
+    animation-timing-function: ease-out;
+  }
+  
+  @media (max-width: 56.25em) {
+    .heading-primary--main {
+     font-size: 2.5rem; /*1 rem = 8px, 8/16 = 50%  //width < 600 tablet Portrait*/
+    }
+  }
+  
+  @media (max-width: 37.5em) { 
+    
+    .heading-primary--main {
+     font-size: 2rem; /*phone*/
+    }
+  }
+  
+  @media (min-width: 112.5em) {
+    .heading-primary--main {
+     font-size:1.5rem; /*1 rem = 12px, 12/16 Tablet Landscape */
+   }
+  }
+  
+  
+  .heading-primary--sub{
+    display:block;
+    color:#fff;
+    font-size: 1.4rem;
+    letter-spacing: .2rem;
+    font-weight: 370;
+    margin-bottom: 3.0rem;
+    animation: moveInRight 1s ease-out;
+  }
+  
+  @keyframes moveInLeft{
+    0%{
+      opacity:0;
+      transform: translateX(-10rem); /*-100px*/
+    }
+  
+    80%{
+      transform: translateX(1rem); /*10px*/
+  
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+  
+  
+  @keyframes moveInRight{
+    0%{
+      opacity:0;
+      transform: translateX(10rem); /*100px*/
+    }
+  
+    80%{
+      transform: translateX(-1rem); /*-10px*/
+  
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+  
+  @keyframes moveInBottom{
+    0%{
+      opacity:0;
+      transform: translateY(4rem); /*40px*/
+    }
+  
+  
+    100% {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+  
+  .hero__icon{
+    margin-top:5rem; /*50px*/
+    color: white;
+    font-size: 1.1rem; /*11px*/ 
+    letter-spacing: 0.1rem; /*1px*/
+  }
+  
+  strong {
+    color:#fff;
+  }
+  
+  a{
+   font-size: 1.1rem; /*11px*/
+   letter-spacing: .1rem; /*1px*/
+   
+  }
+  
+  /*button initial state*/
+  .btn:link,
+  .btn:visited{
+    text-decoration: none;
+    padding: .8rem 1.2rem; /*8px 12px*/
+    border-radius: .5rem; /*5px*/
+    display: inline-block;
+    font-weight: 900;
+    transition: all .2s;
+    position: relative;
+  }
+  /*hover state*/
+  .btn:hover{
+    transform: translateY(-0.3rem); /*-3px*/
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);/*10px 20px 20% opacity to have a subtle shadow and not too visible*/
+  
+  }
+  /*active state*/
+  .btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);/*5px 10px*/
+  }
+  
+  .btn--white{
+    background-color: white;
+    color:green;
+  }
+  
+  .btn::after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: .5rem; /*5px*/
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+    transition: all .4s;
+  }
+  
+  .btn--white::after{
+    background-color: white;
+  }
+  
+  .btn:hover::after{
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+    
+  }
+  
+  .btn--animated{
+    animation: moveInBottom 1s ease-out .75s;
+    animation-fill-mode: backwards;
+  }
+  
+  /*SVG section wave part*/
+  
+  
+  .wave{
+    height: 15rem; /*150px*/ 
+    overflow: hidden; 
+  }
+  
+  
+  @media (max-width: 75em) { 
+    .wave {
+     height: 0; /*1 rem =9px  //width < 900*/  
+    }
+   }
 
