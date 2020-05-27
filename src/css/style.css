@@ -430,8 +430,8 @@ align-items: flex-start;
   
   .hero__img-box {
     position: relative;
-    top:9rem;
-    margin-right: 2rem;
+    top:10rem;
+    margin-right: 1.5rem;
   }
   
   @media (max-width: 75em) { 
@@ -444,7 +444,7 @@ align-items: flex-start;
   .hero__img{
     width: 37rem;
     height: 22rem;
-    border-radius: .8rem;
+    border-radius: .5rem;
   }
   
   @media (max-width: 75em) { 
