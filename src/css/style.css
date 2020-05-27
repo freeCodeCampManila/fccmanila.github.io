@@ -430,7 +430,8 @@ align-items: flex-start;
   
   .hero__img-box {
     position: relative;
-    top:2rem;
+    top:9rem;
+    margin-right: 2rem;
   }
   
   @media (max-width: 75em) { 
@@ -442,7 +443,7 @@ align-items: flex-start;
   
   .hero__img{
     width: 37rem;
-    height: 27rem;
+    height: 22rem;
     border-radius: .8rem;
   }
   
@@ -519,7 +520,7 @@ align-items: flex-start;
   .heading-primary--sub{
     display:block;
     color:#fff;
-    font-size: 1rem;
+    font-size: 1.1rem;
     letter-spacing: .2rem;
     font-weight: 370;
     margin-bottom: 3.0rem;
