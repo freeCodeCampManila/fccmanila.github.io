@@ -2,7 +2,7 @@
 
 ## 👋 Hello!
 
-We are building our website. We welcome contributions, and we are excited to welcome you aboard.
+We are building our website. We welcome contributions and we are excited to welcome you aboard.
 
 Happy contributing!
 
