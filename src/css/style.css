@@ -216,6 +216,84 @@
   text-align: center;
 }
 
+/* ----------------- Hero section ----------------- */
+.hero .background-svg {
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0;
+  fill: #006400;
+  position: absolute;
+  z-index: -1;
+}
+
+.hero .container {
+  padding: 6rem 0;
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero .container .col {
+  display: inline-block;
+  max-width: 50%;
+  width: 48%;
+  padding: 1rem;
+}
+
+.hero .container .thumbnail img {
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.hero .container .content {
+  color: #fff;
+}
+.hero .container .content h2 {
+  color: inherit;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.hero .container .content h5 {
+  color: inherit;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
+}
+
+.hero-btn {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 3rem;
+}
+
+.hero-btn a {
+  background-color: white;
+  color: #006400;
+  font-size: 0.9rem;
+}
+.hero-facebook-count {
+  display: flex;
+  align-items: center;
+  opacity: 0.5;
+}
+.hero-facebook-count img {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.hero-facebook-count p {
+  margin: 0;
+  font-size: 0.7rem;
+  font-weight: 100;
+  color: white;
+}
+/* ----------------- End section ----------------- */
+
 .footer {
   height: auto;
   background-color: #006400;
