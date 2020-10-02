@@ -1,6 +1,6 @@
 # freeCodeCamp Manila Website
 
-## 👋 Hello!
+## 👋 Hello Guys!
 
 We are building our website. We welcome contributions, and we are excited to welcome you aboard.
 
