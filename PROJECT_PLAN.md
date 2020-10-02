@@ -1,6 +1,6 @@
-# freeCodeCamp Manila Website Plan
+# freeCodeCamp Manila Website prototype
 
-We are going to build this website with HTML, CSS and a bit of JavaScript. First-time contributors are highly encouraged to contribute.
+We will be going to build this website with HTML, CSS and a bit of JavaScript. First-time contributors are highly encouraged to contribute.
 
 All the task are on [issues](https://github.com/fccManila/fccmanila.github.io/issues), if you want to work on a task comment on the issue you want to work on, and the task will be assigned to you.
 
