@@ -10,15 +10,15 @@ Read the **Quick Start** guide for you to setup this repo, and read the **[Proje
 
 ## 🚀 Quick Start
 
-1. **Fork this repo**
+1. ***Fork this repo***
 
-1. **Clone your forked repo**
+1. ***Clone your forked repo***
 
    ```sh
    git clone https://github.com/<your-github-username-here>/fccmanila.github.io
    ```
 
-1. **Install dependencies**
+1. ***Install dependencies***
 
    Navigate into the site’s directory and install dependencies.
 
@@ -28,7 +28,7 @@ Read the **Quick Start** guide for you to setup this repo, and read the **[Proje
    # or yarn install
    ```
 
-1. **Start the server**
+1. ***Start the server***
 
    ```sh
    yarn start
