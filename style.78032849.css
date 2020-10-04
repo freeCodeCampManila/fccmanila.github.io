@@ -1,0 +1,494 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: #2e3e48;
+}
+
+.text-supporting {
+  color: #828282;
+}
+
+.gallery {
+  background: rgba(200, 254, 200, 0.2); /*#C8FEC8*/
+  padding: 75px;
+}
+
+.involve {
+  background: #ffffff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.gallery-title,
+.involve-title {
+  margin-bottom: 45px;
+  color: #006400;
+  text-align: center;
+}
+
+.gallery-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 5px;
+}
+
+.gallery-grid-leftCol {
+  justify-self: end;
+}
+
+.gallery-grid-rightCol {
+  justify-self: start;
+}
+
+.card {
+  border-radius: 5px;
+  box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2);
+  background: white;
+  width: 435px;
+  margin: 25px;
+  transition: 250ms ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 18px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.card-photo,
+.modal-photo {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-title,
+.modal-title {
+  font-size: 1em;
+  font-weight: bold;
+  padding: 5px 0 5px 0;
+}
+
+.card-text {
+  padding: 5px 0 5px 0;
+}
+
+.card-secondary-text,
+.modal-text {
+  font-size: 0.8em;
+}
+
+.card-text-container {
+  padding: 10px 25px 15px 25px;
+}
+
+/* Dark background of modal */
+.card-modal:before {
+  content: "";
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Style of modal */
+.modal-container {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 800px;
+  background-color: #fff;
+  z-index: 1;
+
+  /* push the modal 200% below to hide it first */
+  -webkit-transform: translate(-50%, 200%);
+  -ms-transform: translate(-50%, 200%);
+  transform: translate(-50%, 200%);
+
+  /* make the transition a little slower by 500ms */
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+}
+
+/* Show modal dark background when click */
+.card-modal:target::before {
+  display: block;
+}
+
+/* Show modal when click by setting translate(-50%, 200%) to (-50%, -50%)  */
+.card-modal:target .modal-container {
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.modal-photo {
+  height: 400px;
+}
+
+.modal-content {
+  padding: 5px 20px 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.map-icon {
+  position: relative;
+  top: 2px;
+}
+
+.message {
+  width: 600px;
+  margin: 50px auto;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #2e3e48;
+}
+
+.button-primary {
+  background: #006400;
+  border-radius: 5px;
+  padding: 12px 16px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 300ms ease all;
+  display: inline-block;
+}
+
+.button-primary:hover {
+  background: #004200;
+}
+
+.community {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.community-title {
+  font-size: 1.3em;
+  font-weight: 900;
+  margin-bottom: 3rem;
+  color: #006400;
+  text-align: center;
+}
+
+.community-text {
+  color: #2e3e48;
+  font-weight: 100;
+  line-height: 1.75rem;
+  padding-left: 18rem;
+  padding-right: 18rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.community-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.community-btn a {
+  background-color: #006400;
+  font-size: 0.75rem;
+  font-weight: 900;
+  border-radius: 5px;
+  color: white;
+  padding: 0.75rem 0.9rem;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* ----------------- Hero section ----------------- */
+.hero .background-svg {
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0;
+  fill: #006400;
+  position: absolute;
+  z-index: -1;
+}
+
+.hero .container {
+  padding: 6rem 0;
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero .container .col {
+  display: inline-block;
+  max-width: 50%;
+  width: 48%;
+  padding: 1rem;
+}
+
+.hero .container .thumbnail img {
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.hero .container .content {
+  color: #fff;
+}
+.hero .container .content h2 {
+  color: inherit;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.hero .container .content h5 {
+  color: inherit;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
+}
+
+.hero-btn {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 3rem;
+}
+
+.hero-btn a {
+  background-color: white;
+  color: #006400;
+  font-size: 0.9rem;
+}
+.hero-facebook-count {
+  display: flex;
+  align-items: center;
+  opacity: 0.5;
+}
+.hero-facebook-count img {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.hero-facebook-count p {
+  margin: 0;
+  font-size: 0.7rem;
+  font-weight: 100;
+  color: white;
+}
+/* ----------------- End section ----------------- */
+
+.footer {
+  height: auto;
+  background-color: #006400;
+  width: 100%;
+  padding-top: 20px;
+  align-items: center;
+  justify-content: space-around;
+  color: #ffffff;
+  font-weight: 100;
+  padding-bottom: 30px;
+}
+
+.copyright {
+  color: #fff;
+  text-align: center;
+  font-size: 11px;
+  padding-top: 15px;
+}
+
+.footer-support-text-owned {
+  font-size: 10px;
+  padding-top: 15px;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.footer-container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 15px;
+  margin-top: 15px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: grid;
+}
+
+.column {
+  padding: 1rem;
+  height: auto;
+}
+
+.column-2,
+.column-3,
+.column-4 {
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer-container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-container {
+    width: 1170px;
+  }
+}
+.footer-header {
+  color: #ffffff;
+  font-weight: 100;
+}
+.small-footer-header {
+  font-size: 12px;
+  color: #fff;
+  font-weight: 100;
+}
+
+.footer-support-text {
+  color: #eff5ef;
+  font-size: 14px;
+  margin-top: 8px;
+  padding-top: 8px;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.fcc-footer-logo {
+  width: 40px;
+  vertical-align: middle;
+}
+
+.navbar {
+  background: #ffffff;
+  box-shadow: 0 0 4px #cbcbcb;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.navbar > .container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-left,
+.navbar-right {
+  min-width: 10rem;
+  min-height: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand .brand-image {
+  border-radius: 50%;
+}
+
+.navbar-brand img.brand-image {
+  max-width: 2.5rem;
+}
+
+.navbar-brand .brand-image,
+.navbar-brand .brand-text {
+  margin: 0 0.25rem;
+}
+
+.navbar-brand .brand-text {
+  font-weight: 700;
+  color: #006400;
+}
+
+.navbar-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+@media (max-width: 767px) {
+  /* make right navbar items disappear except for the Community Button */
+  .navbar-right .navbar-item {
+    display: none;
+  }
+
+  .navbar-right .navbar-item.community-btn {
+    display: flex;
+  }
+}
+
+.navbar-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.5rem;
+  min-width: 4rem;
+  padding: 0.75rem 0.9rem;
+}
+
+a.navbar-item {
+  text-decoration: none;
+}
+
+a.navbar-item:hover {
+  text-decoration: underline;
+}
+
+.navbar-item.community-btn {
+  /* community-btn style rules will make padding at navbar so wide, so disable it*/
+
+  padding: 0;
+}
+
+.navbar-item:first-child {
+  margin-right: 1.125rem;
+}
+
+.navbar-item + .navbar-item {
+  margin: 0 1.125rem;
+}
+
+a.footer-link:hover {
+  text-decoration: underline;
+}
+
+
+/*# sourceMappingURL=/style.78032849.css.map */
