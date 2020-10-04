@@ -312,7 +312,8 @@
 .navbar {
   background: #ffffff;
   box-shadow: 0 0 4px #cbcbcb;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
 }
 
