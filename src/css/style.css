@@ -500,4 +500,16 @@ a.footer-link:hover {
 }
 
 @media screen and (max-width: 768px) {
+  .gallery-grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .gallery-grid-leftCol {
+    justify-self: center;
+  }
+
+  .gallery-grid-rightCol {
+    justify-self: center;
+  }
 }
