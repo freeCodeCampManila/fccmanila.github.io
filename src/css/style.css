@@ -517,4 +517,8 @@ a.footer-link:hover {
   .modal-photo {
     height: auto;
   }
+
+  .involve {
+    padding: 75px 0;
+  }
 }
