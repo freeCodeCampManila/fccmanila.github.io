@@ -153,8 +153,9 @@
 }
 
 .message {
-  width: 600px;
+  max-width: 600px;
   margin: 50px auto;
+  padding: 0 2rem;
   font-size: 18px;
   line-height: 30px;
   text-align: center;
@@ -515,9 +516,5 @@ a.footer-link:hover {
   .card-photo,
   .modal-photo {
     height: auto;
-  }
-
-  .involve {
-    padding: 75px 0;
   }
 }
