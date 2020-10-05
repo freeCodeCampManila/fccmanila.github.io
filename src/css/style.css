@@ -494,8 +494,7 @@ a.footer-link:hover {
 /* RESPONSIVE */
 @media screen and (max-width: 992px) {
   .community-text {
-    padding-left: 14rem;
-    padding-right: 14rem;
+    padding: 0 15%;
   }
 }
 
