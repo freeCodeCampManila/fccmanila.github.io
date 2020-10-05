@@ -512,4 +512,9 @@ a.footer-link:hover {
   .gallery-grid-rightCol {
     justify-self: center;
   }
+
+  .card-photo,
+  .modal-photo {
+    height: auto;
+  }
 }
