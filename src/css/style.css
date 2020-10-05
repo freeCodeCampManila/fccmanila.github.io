@@ -47,7 +47,8 @@
   border-radius: 5px;
   box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.2);
   background: white;
-  width: 435px;
+  /* width: 435px; */
+  max-width: 435px;
   margin: 25px;
   transition: 250ms ease-in-out;
 }
@@ -496,4 +497,7 @@ a.footer-link:hover {
     padding-left: 14rem;
     padding-right: 14rem;
   }
+}
+
+@media screen and (max-width: 768px) {
 }
