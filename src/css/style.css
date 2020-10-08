@@ -217,6 +217,10 @@
 }
 
 /* ----------------- Hero section ----------------- */
+.hero {
+  padding-bottom: 8rem;
+}
+
 .hero .background-svg {
   width: 100%;
   top: 0;
